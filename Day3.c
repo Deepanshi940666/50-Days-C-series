@@ -12,22 +12,21 @@ int main()
     {
         scanf("%d", &a[i]);
     }
-    
+
     // Bubble Sort
     for (i = 0; i < n; i++)
     {
-        for(int j = 0; j < n-1-i; j++)
+        for (int j = 0; j < n - 1 - i; j++)
         {
-            if (a[j] > a[j+1])
+            if (a[j] > a[j + 1])
             {
                 int temp = a[j];
-                a[j] = a[j+1];
-                a[j+1] = temp;
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
             }
         }
-
     }
-    printf("Max is %d\n",a[n-1]);
+    printf("Max is %d\n", a[n - 1]);
     printf("Min is %d", a[0]);
     return 0;
 }
